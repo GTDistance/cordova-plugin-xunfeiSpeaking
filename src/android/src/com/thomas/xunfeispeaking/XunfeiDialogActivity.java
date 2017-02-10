@@ -225,7 +225,7 @@ public class XunfeiDialogActivity  extends Activity{
 //        mResultText.setSelection(mResultText.length());
         Intent resultIntent = new Intent();
         Bundle bundle = new Bundle();
-        bundle.putString("result", "音频中文：" + resultBuffer.toString());
+        bundle.putString("result", resultBuffer.toString());
         resultIntent.putExtras(bundle);
         this.setResult(RESULT_OK, resultIntent);
         finish();
